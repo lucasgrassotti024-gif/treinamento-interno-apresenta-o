@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso Trabalho em Altura - Treinamentos de Segurança</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #0b6b3a;
+      --verde-claro: #16a34a;
+      --verde-escuro: #064e2a;
+      --branco: #ffffff;
+      --cinza-claro: #f4f6f9;
+      --cinza-texto: #444;
+      --vermelho: #d93025;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cinza-claro);
+      color: var(--cinza-texto);
+    }
+
+    header, footer {
+      background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+      color: var(--branco);
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .alerta {
+      background: #e6f6ee;
+      border-left: 6px solid var(--verde);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .quiz {
+      margin-top: 20px;
+    }
+
+    .pergunta {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .pergunta h4 {
+      margin-bottom: 10px;
+      color: var(--verde);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    button {
+      background: var(--verde);
+      color: var(--branco);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: var(--verde-claro);
+    }
+
+    .resultado {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .aprovado {
+      background: #e6f6ee;
+      color: var(--verde);
+      border-left: 6px solid var(--verde);
+    }
+
+    .reprovado {
+      background: #fdecea;
+      color: var(--vermelho);
+      border-left: 6px solid var(--vermelho);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Treinamentos de Segurança</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CONTEÚDO DO CURSO -->
+  <div class="box">
+    <h2>🚧 Trabalho em Altura</h2>
+
+    <p>
+      Trabalho em altura é toda atividade realizada acima do nível do solo,
+      onde existe risco de queda. Mesmo pequenas alturas podem causar acidentes
+      graves se a pessoa cair.
+    </p>
+
+    <p>
+      Muitas pessoas subestimam o risco, mas uma queda pode causar fraturas,
+      traumatismos e até acidentes fatais.
+    </p>
+
+    <div class="alerta">
+      ⚠️ Uma queda pode acontecer em poucos segundos e trazer consequências graves.
+    </div>
+
+    <h3>Principais riscos do trabalho em altura</h3>
+    <ul>
+      <li>Queda de pessoas</li>
+      <li>Queda de ferramentas</li>
+      <li>Fraturas e lesões graves</li>
+      <li>Traumatismo</li>
+      <li>Acidentes fatais</li>
+    </ul>
+
+    <h3>Situações comuns de trabalho em altura</h3>
+    <ul>
+      <li>Uso de escadas</li>
+      <li>Plataformas elevatórias</li>
+      <li>Andaimes</li>
+      <li>Telhados</li>
+      <li>Estruturas elevadas</li>
+    </ul>
+
+    <h3>Cuidados antes de iniciar</h3>
+    <ul>
+      <li>Verificar se a escada ou plataforma está em bom estado</li>
+      <li>Usar cinto de segurança quando necessário</li>
+      <li>Garantir pontos de ancoragem</li>
+      <li>Isolar a área abaixo</li>
+      <li>Usar EPI correto</li>
+    </ul>
+
+    <h3>Durante o trabalho</h3>
+    <ul>
+      <li>Manter atenção total</li>
+      <li>Não se inclinar além do limite</li>
+      <li>Não subir em locais improvisados</li>
+      <li>Manter ferramentas presas</li>
+      <li>Parar se perceber risco</li>
+    </ul>
+
+    <h3>Regras importantes</h3>
+    <ul>
+      <li>Nunca trabalhar em altura sem autorização</li>
+      <li>Não trabalhar sozinho quando exigido</li>
+      <li>Respeitar os procedimentos da área</li>
+      <li>Comunicar condições inseguras</li>
+    </ul>
+
+    <p>
+      Trabalhar em altura exige cuidado redobrado. Seguir os procedimentos ajuda
+      a garantir que todos voltem para casa em segurança.
+    </p>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="box">
+    <h2>📝 Avaliação Rápida</h2>
+
+    <div class="quiz">
+
+      <div class="pergunta">
+        <h4>1) O que é considerado trabalho em altura?</h4>
+        <label><input type="radio" name="q1" value="a"> Trabalhar sentado</label>
+        <label><input type="radio" name="q1" value="b"> Trabalhar no chão</label>
+        <label><input type="radio" name="q1" value="c"> Trabalhar acima do nível do solo</label>
+        <label><input type="radio" name="q1" value="d"> Trabalhar em escritório</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>2) Qual é um dos principais riscos?</h4>
+        <label><input type="radio" name="q2" value="a"> Barulho</label>
+        <label><input type="radio" name="q2" value="b"> Cansaço</label>
+        <label><input type="radio" name="q2" value="c"> Atraso</label>
+        <label><input type="radio" name="q2" value="d"> Queda</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>3) Antes de iniciar, o correto é:</h4>
+        <label><input type="radio" name="q3" value="a"> Verificar escada e usar EPI</label>
+        <label><input type="radio" name="q3" value="b"> Ignorar equipamentos</label>
+        <label><input type="radio" name="q3" value="c"> Subir rápido</label>
+        <label><input type="radio" name="q3" value="d"> Trabalhar sem proteção</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>4) O que NÃO deve ser feito?</h4>
+        <label><input type="radio" name="q4" value="a"> Subir em locais improvisados</label>
+        <label><input type="radio" name="q4" value="b"> Usar cinto quando indicado</label>
+        <label><input type="radio" name="q4" value="c"> Isolar a área</label>
+        <label><input type="radio" name="q4" value="d"> Comunicar riscos</label>
+      </div>
+
+      <button onclick="corrigirQuiz()">Finalizar Avaliação</button>
+      <div id="resultado" class="resultado"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Treinamentos de Segurança
+</footer>
+
+<script>
+  function corrigirQuiz() {
+    let acertos = 0;
+
+    const respostas = {
+      q1: "c",
+      q2: "d",
+      q3: "a",
+      q4: "a"
+    };
+
+    for (let pergunta in respostas) {
+      const marcada = document.querySelector(`input[name="${pergunta}"]:checked`);
+      if (marcada && marcada.value === respostas[pergunta]) {
+        acertos++;
+      }
+    }
+
+    const resultado = document.getElementById("resultado");
+    resultado.style.display = "block";
+
+    if (acertos >= 3) {
+      resultado.className = "resultado aprovado";
+      resultado.innerHTML = `✅ Aprovado!<br>Você acertou ${acertos} de 4 perguntas.<br>Bom trabalho!`;
+    } else {
+      resultado.className = "resultado reprovado";
+      resultado.innerHTML = `❌ Reprovado.<br>Você acertou ${acertos} de 4 perguntas.<br>Revise o conteúdo e tente novamente.`;
+    }
+
+    resultado.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
