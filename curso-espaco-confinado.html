@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso Espaço Confinado - Treinamentos de Segurança</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #0b6b3a;
+      --verde-claro: #16a34a;
+      --verde-escuro: #064e2a;
+      --branco: #ffffff;
+      --cinza-claro: #f4f6f9;
+      --cinza-texto: #444;
+      --vermelho: #d93025;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cinza-claro);
+      color: var(--cinza-texto);
+    }
+
+    header, footer {
+      background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+      color: var(--branco);
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .alerta {
+      background: #fdecea;
+      border-left: 6px solid var(--vermelho);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .quiz {
+      margin-top: 20px;
+    }
+
+    .pergunta {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .pergunta h4 {
+      margin-bottom: 10px;
+      color: var(--verde);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    button {
+      background: var(--verde);
+      color: var(--branco);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: var(--verde-claro);
+    }
+
+    .resultado {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .aprovado {
+      background: #e6f6ee;
+      color: var(--verde);
+      border-left: 6px solid var(--verde);
+    }
+
+    .reprovado {
+      background: #fdecea;
+      color: var(--vermelho);
+      border-left: 6px solid var(--vermelho);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Treinamentos de Segurança</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CONTEÚDO DO CURSO -->
+  <div class="box">
+    <h2>🕳️ Espaço Confinado (NR-33 – Conscientização)</h2>
+
+    <p>
+      Espaço confinado é qualquer local que não foi projetado para ocupação
+      contínua de pessoas, possui entradas e saídas limitadas e pode apresentar
+      riscos graves à saúde e à vida.
+    </p>
+
+    <p>
+      Em fábricas, exemplos comuns são tanques, silos, vasos, dutos, caixas,
+      galerias e tubulações.
+    </p>
+
+    <div class="alerta">
+      ⚠️ Espaço confinado é uma das atividades com maior risco de morte na indústria.
+    </div>
+
+    <h3>Principais riscos do espaço confinado</h3>
+    <ul>
+      <li>Falta de oxigênio</li>
+      <li>Presença de gases tóxicos</li>
+      <li>Explosão</li>
+      <li>Engolfamento (soterramento)</li>
+      <li>Dificuldade de resgate</li>
+    </ul>
+
+    <h3>Sinais de perigo</h3>
+    <ul>
+      <li>Cheiro forte</li>
+      <li>Falta de ar</li>
+      <li>Tontura</li>
+      <li>Desmaio</li>
+      <li>Ambiente abafado</li>
+    </ul>
+
+    <h3>Regras básicas</h3>
+    <ul>
+      <li>Nunca entrar sem autorização</li>
+      <li>Seguir Permissão de Trabalho</li>
+      <li>Monitorar gases antes e durante</li>
+      <li>Ter vigia do lado de fora</li>
+      <li>Plano de resgate definido</li>
+    </ul>
+
+    <h3>O que NÃO fazer</h3>
+    <ul>
+      <li>Entrar para ajudar sem proteção</li>
+      <li>Ignorar alarmes ou medições</li>
+      <li>Trabalhar sozinho</li>
+      <li>Entrar sem treinamento</li>
+    </ul>
+
+    <p>
+      Muitos acidentes graves acontecem quando alguém tenta ajudar um colega
+      sem proteção. Isso transforma uma vítima em duas.
+    </p>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="box">
+    <h2>📝 Avaliação Rápida</h2>
+
+    <div class="quiz">
+
+      <div class="pergunta">
+        <h4>1) Espaço confinado é:</h4>
+        <label><input type="radio" name="q1" value="a"> Escritório</label>
+        <label><input type="radio" name="q1" value="b"> Local com entrada limitada e riscos</label>
+        <label><input type="radio" name="q1" value="c"> Área aberta</label>
+        <label><input type="radio" name="q1" value="d"> Corredor</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>2) Um risco grave é:</h4>
+        <label><input type="radio" name="q2" value="a"> Falta de oxigênio</label>
+        <label><input type="radio" name="q2" value="b"> Barulho</label>
+        <label><input type="radio" name="q2" value="c"> Poeira</label>
+        <label><input type="radio" name="q2" value="d"> Calor</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>3) O que NÃO deve ser feito?</h4>
+        <label><input type="radio" name="q3" value="a"> Seguir PT</label>
+        <label><input type="radio" name="q3" value="b"> Monitorar gases</label>
+        <label><input type="radio" name="q3" value="c"> Entrar para ajudar sem proteção</label>
+        <label><input type="radio" name="q3" value="d"> Ter vigia</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>4) Antes de entrar, é obrigatório:</h4>
+        <label><input type="radio" name="q4" value="a"> Ignorar riscos</label>
+        <label><input type="radio" name="q4" value="b"> Ter autorização e monitorar gases</label>
+        <label><input type="radio" name="q4" value="c"> Entrar rápido</label>
+        <label><input type="radio" name="q4" value="d"> Trabalhar sozinho</label>
+      </div>
+
+      <button onclick="corrigirQuiz()">Finalizar Avaliação</button>
+      <div id="resultado" class="resultado"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Treinamentos de Segurança
+</footer>
+
+<script>
+  function corrigirQuiz() {
+    let acertos = 0;
+
+    const respostas = {
+      q1: "b",
+      q2: "a",
+      q3: "c",
+      q4: "b"
+    };
+
+    for (let pergunta in respostas) {
+      const marcada = document.querySelector(`input[name="${pergunta}"]:checked`);
+      if (marcada && marcada.value === respostas[pergunta]) {
+        acertos++;
+      }
+    }
+
+    const resultado = document.getElementById("resultado");
+    resultado.style.display = "block";
+
+    if (acertos >= 3) {
+      resultado.className = "resultado aprovado";
+      resultado.innerHTML = `✅ Aprovado!<br>Você acertou ${acertos} de 4 perguntas.<br>Bom trabalho!`;
+    } else {
+      resultado.className = "resultado reprovado";
+      resultado.innerHTML = `❌ Reprovado.<br>Você acertou ${acertos} de 4 perguntas.<br>Revise o conteúdo e tente novamente.`;
+    }
+
+    resultado.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
