@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-
-/* VARIÁVEIS DE COR */
 :root {
   --verde: #0b6b3a;
   --verde-claro: #16a34a;
@@ -17,12 +15,17 @@
   --cinza-texto: #444;
 }
 
-/* HEADER MODERNO */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cinza-claro);
+  color: var(--cinza-texto);
+}
+
 header {
   background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
   color: var(--branco);
   padding: 20px 30px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -30,31 +33,27 @@ header {
 
 header h1 {
   font-size: 1.6em;
-  letter-spacing: 1px;
 }
 
 nav a {
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: 0.2s;
   color: var(--branco);
   margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
 }
 
 nav a:hover {
   background: rgba(255,255,255,0.15);
 }
 
-/* HERO / BANNER PRINCIPAL */
 .hero {
   background: linear-gradient(135deg, var(--verde-escuro), var(--verde), var(--verde-claro));
   color: var(--branco);
   padding: 90px 20px;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
 .hero::after {
@@ -68,19 +67,11 @@ nav a:hover {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .hero h2 {
   font-size: 2.6em;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
-
-.hero p {
-  font-size: 1.15em;
-  line-height: 1.6;
-  margin-bottom: 35px;
 }
 
 .hero-btn {
@@ -91,28 +82,24 @@ nav a:hover {
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  transition: 0.2s;
 }
 
 .hero-btn:hover {
   background: var(--branco);
   color: var(--verde-escuro);
-  transform: translateY(-3px);
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--cinza-claro);
-  color: var(--cinza-texto);
 }
 
 main {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.secao-titulo {
+  margin: 50px 0 20px;
+  border-left: 6px solid var(--verde-claro);
+  padding-left: 15px;
+  color: var(--verde);
 }
 
 .grid {
@@ -126,22 +113,14 @@ main {
   border-radius: 14px;
   padding: 25px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card h3 {
   color: var(--verde);
-  margin-bottom: 10px;
-}
-
-.card p {
-  flex: 1;
-  font-size: 0.95em;
 }
 
 .card a {
+  display: block;
   margin-top: 15px;
   background: var(--verde-claro);
   color: var(--branco);
@@ -152,21 +131,12 @@ main {
   font-weight: bold;
 }
 
-.secao-titulo {
-  margin: 50px 0 20px;
-  border-left: 6px solid var(--verde-claro);
-  padding-left: 15px;
-  color: var(--verde);
-}
-
-/* FOOTER */
 footer {
   background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
   color: var(--branco);
-  padding: 30px 20px;
+  padding: 30px;
   text-align: center;
 }
-
   </style>
 </head>
 
@@ -182,115 +152,78 @@ footer {
 
 <section class="hero">
   <div class="hero-content">
-    <h2>Treinamentos internos de Segurança Industrial</h2>
-    <p>
-      Plataforma de conscientização para apoiar o aprendizado, reforçar
-      comportamentos seguros e reduzir riscos no ambiente de trabalho.
-    </p>
+    <h2>Treinamentos de Segurança Industrial</h2>
+    <p>Conteúdo prático para reduzir riscos e reforçar comportamentos seguros.</p>
     <a href="#cursos" class="hero-btn">Ver Cursos</a>
   </div>
 </section>
 
 <main id="cursos">
 
-  <h2 class="secao-titulo">🦺 Cursos Básicos e NRs</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>NR-06 – Uso de EPI</h3>
-      <p>Importância do EPI, uso correto, conservação e responsabilidade.</p>
-      <a href="curso-epi.html">Acessar Curso</a>
-    </div>
+<h2 class="secao-titulo">🦺 Cursos de Segurança</h2>
+<div class="grid">
 
-    <div class="card">
-      <h3>NR-23 – Prevenção e Combate a Incêndio</h3>
-      <p>Extintores, rotas de fuga, tipos de fogo e comportamento seguro.</p>
-      <a href="curso-incendio.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>NR-35 – Trabalho em Altura</h3>
-      <p>Cinto, ancoragem, quedas e regras básicas acima de 2 metros.</p>
-      <a href="curso-altura.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>NR-11 – Movimentação de Cargas</h3>
-      <p>Empilhadeiras, pontes rolantes e transporte interno.</p>
-      <a href="curso-nr11.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>NR-12 – Máquinas e Equipamentos</h3>
-      <p>Proteções, bloqueios e segurança em máquinas.</p>
-      <a href="curso-nr12.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Ergonomia (NR-17)</h3>
-      <p>Postura, esforço físico e prevenção de dores e lesões.</p>
-      <a href="curso-ergonomia.html">Acessar Curso</a>
-    </div>
+  <div class="card">
+    <h3>Uso de EPI</h3>
+    <p>Uso correto e importância dos equipamentos de proteção.</p>
+    <a href="curso-epi.html">Acessar</a>
   </div>
 
-  <h2 class="secao-titulo">🎨🏗️ Trabalhos Especiais</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Pintura Industrial Segura</h3>
-      <p>Vapores, incêndio, EPIs e cuidados na pintura.</p>
-      <a href="curso-pintura.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Uso Seguro de Andaimes</h3>
-      <p>Quedas, inspeção, guarda-corpo e acesso seguro.</p>
-      <a href="curso-andaime.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Hidrojato – Riscos e Segurança</h3>
-      <p>Alta pressão, cortes e EPIs especiais.</p>
-      <a href="curso-hidrojato.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Hidrovácuo – Operação Segura</h3>
-      <p>Sucção, gases e resíduos contaminados.</p>
-      <a href="curso-hidrovacuo.html">Acessar Curso</a>
-    </div>
+  <div class="card">
+    <h3>Incêndio Básico</h3>
+    <p>Prevenção, extintores e como agir em emergências.</p>
+    <a href="curso-incendio.html">Acessar</a>
   </div>
 
-  <h2 class="secao-titulo">🧪🕳️ Segurança Crítica</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Gases e Vazamentos Químicos</h3>
-      <p>Identificação, fuga e comunicação.</p>
-      <a href="curso-gases-vazamentos.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Chuveiro de Emergência e Lava-Olhos</h3>
-      <p>Uso correto em acidentes químicos.</p>
-      <a href="curso-chuveiro-lavaolhos.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Espaço Confinado (NR-33)</h3>
-      <p>Falta de oxigênio, gases e resgate.</p>
-      <a href="curso-espaco-confinado.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Permissão de Trabalho (PT)</h3>
-      <p>Autorização, riscos e responsabilidades.</p>
-      <a href="curso-permissao-trabalho.html">Acessar Curso</a>
-    </div>
-
-    <div class="card">
-      <h3>Parada Geral – Segurança</h3>
-      <p>Grandes manutenções e riscos elevados.</p>
-      <a href="curso-parada-geral.html">Acessar Curso</a>
-    </div>
+  <div class="card">
+    <h3>Trabalho em Altura</h3>
+    <p>Riscos, cuidados e regras de segurança.</p>
+    <a href="curso-altura.html">Acessar</a>
   </div>
+
+  <div class="card">
+    <h3>Uso Seguro de Andaimes</h3>
+    <p>Montagem, inspeção e uso correto.</p>
+    <a href="curso-andaime.html">Acessar</a>
+  </div>
+
+  <div class="card">
+    <h3>Chuveiro e Lava-Olhos</h3>
+    <p>Uso correto em acidentes químicos.</p>
+    <a href="curso-chuveiro-lavaolhos.html">Acessar</a>
+  </div>
+
+  <div class="card">
+    <h3>Segurança Elétrica</h3>
+    <p>Choques, bloqueio elétrico e cuidados básicos.</p>
+    <a href="curso-seguranca-eletrica.html">Acessar</a>
+  </div>
+
+  <div class="card">
+    <h3>Espaço Confinado</h3>
+    <p>Riscos, autorização e regras essenciais.</p>
+    <a href="curso-espaco-confinado.html">Acessar</a>
+  </div>
+
+  <div class="card">
+    <h3>Gases e Vazamentos</h3>
+    <p>Identificação, riscos e resposta à emergência.</p>
+    <a href="curso-gases-vazamentos.html">Acessar</a>
+  </div>
+
+  <div class="card">
+    <h3>Produtos Químicos</h3>
+    <p>Manuseio seguro e prevenção de acidentes.</p>
+    <a href="curso-produtos-quimicos.html">Acessar</a>
+  </div>
+
+  <div class="card">
+    <h3>Trabalho a Quente</h3>
+    <p>Solda, corte e prevenção de incêndios.</p>
+    <a href="curso-trabalho-quente.html">Acessar</a>
+  </div>
+
+</div>
 
 </main>
 
