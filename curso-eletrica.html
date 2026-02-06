@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso Segurança Elétrica - Treinamentos de Segurança</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #0b6b3a;
+      --verde-claro: #16a34a;
+      --verde-escuro: #064e2a;
+      --branco: #ffffff;
+      --cinza-claro: #f4f6f9;
+      --cinza-texto: #444;
+      --vermelho: #d93025;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cinza-claro);
+      color: var(--cinza-texto);
+    }
+
+    header, footer {
+      background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+      color: var(--branco);
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .alerta {
+      background: #e6f6ee;
+      border-left: 6px solid var(--verde);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .quiz {
+      margin-top: 20px;
+    }
+
+    .pergunta {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .pergunta h4 {
+      margin-bottom: 10px;
+      color: var(--verde);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    button {
+      background: var(--verde);
+      color: var(--branco);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: var(--verde-claro);
+    }
+
+    .resultado {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .aprovado {
+      background: #e6f6ee;
+      color: var(--verde);
+      border-left: 6px solid var(--verde);
+    }
+
+    .reprovado {
+      background: #fdecea;
+      color: var(--vermelho);
+      border-left: 6px solid var(--vermelho);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Treinamentos de Segurança</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CONTEÚDO DO CURSO -->
+  <div class="box">
+    <h2>⚡ Segurança com Eletricidade</h2>
+
+    <p>
+      A eletricidade está presente em praticamente todas as áreas da fábrica.
+      Painéis, motores, tomadas, cabos e máquinas utilizam energia elétrica para
+      funcionar.
+    </p>
+
+    <p>
+      Mesmo sendo comum no dia a dia, a eletricidade é extremamente perigosa.
+      Um pequeno descuido pode causar choque elétrico, queimaduras graves ou até
+      acidentes fatais.
+    </p>
+
+    <div class="alerta">
+      ⚠️ A eletricidade não dá segunda chance. Um erro pode causar consequências
+      graves em poucos segundos.
+    </div>
+
+    <h3>Principais riscos elétricos</h3>
+    <ul>
+      <li>Choque elétrico</li>
+      <li>Queimaduras</li>
+      <li>Curto-circuito</li>
+      <li>Incêndio</li>
+      <li>Danos em equipamentos</li>
+    </ul>
+
+    <h3>Situações perigosas no dia a dia</h3>
+    <ul>
+      <li>Mexer em painéis sem autorização</li>
+      <li>Usar ferramentas danificadas</li>
+      <li>Trabalhar com mãos molhadas</li>
+      <li>Cabos desencapados</li>
+      <li>Improvisar ligações elétricas</li>
+    </ul>
+
+    <h3>Cuidados básicos com eletricidade</h3>
+    <ul>
+      <li>Nunca mexer em painéis sem treinamento</li>
+      <li>Comunicar cabos soltos ou danificados</li>
+      <li>Usar ferramentas isoladas quando indicado</li>
+      <li>Não improvisar tomadas ou extensões</li>
+      <li>Manter distância de partes energizadas</li>
+    </ul>
+
+    <h3>Importância do bloqueio elétrico</h3>
+    <p>
+      Sempre que for feita manutenção elétrica, o circuito deve ser desligado,
+      bloqueado e testado. Apenas desligar o disjuntor não garante que não exista
+      energia no circuito.
+    </p>
+
+    <ul>
+      <li>Desligar a fonte de energia</li>
+      <li>Bloquear para ninguém religar</li>
+      <li>Testar para confirmar ausência de tensão</li>
+    </ul>
+
+    <p>
+      Respeitar a eletricidade é respeitar a própria vida. Nunca trate energia
+      elétrica como algo simples ou sem perigo.
+    </p>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="box">
+    <h2>📝 Avaliação Rápida</h2>
+
+    <div class="quiz">
+
+      <div class="pergunta">
+        <h4>1) Qual é um dos principais riscos da eletricidade?</h4>
+        <label><input type="radio" name="q1" value="a"> Apenas desconforto</label>
+        <label><input type="radio" name="q1" value="b"> Choque elétrico</label>
+        <label><input type="radio" name="q1" value="c"> Cansaço</label>
+        <label><input type="radio" name="q1" value="d"> Atraso na produção</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>2) O que NÃO deve ser feito?</h4>
+        <label><input type="radio" name="q2" value="a"> Comunicar cabo danificado</label>
+        <label><input type="radio" name="q2" value="b"> Usar ferramentas adequadas</label>
+        <label><input type="radio" name="q2" value="c"> Improvisar ligação elétrica</label>
+        <label><input type="radio" name="q2" value="d"> Manter distância de partes energizadas</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>3) Antes de uma manutenção elétrica, o correto é:</h4>
+        <label><input type="radio" name="q3" value="a"> Confiar que está desligado</label>
+        <label><input type="radio" name="q3" value="b"> Apenas desligar o botão</label>
+        <label><input type="radio" name="q3" value="c"> Desligar, bloquear e testar</label>
+        <label><input type="radio" name="q3" value="d"> Trabalhar rápido</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>4) Trabalhar com mãos molhadas perto de eletricidade é:</h4>
+        <label><input type="radio" name="q4" value="a"> Seguro</label>
+        <label><input type="radio" name="q4" value="b"> Normal</label>
+        <label><input type="radio" name="q4" value="c"> Perigoso</label>
+        <label><input type="radio" name="q4" value="d"> Recomendado</label>
+      </div>
+
+      <button onclick="corrigirQuiz()">Finalizar Avaliação</button>
+      <div id="resultado" class="resultado"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Treinamentos de Segurança
+</footer>
+
+<script>
+  function corrigirQuiz() {
+    let acertos = 0;
+
+    const respostas = {
+      q1: "b",
+      q2: "c",
+      q3: "c",
+      q4: "c"
+    };
+
+    for (let pergunta in respostas) {
+      const marcada = document.querySelector(`input[name="${pergunta}"]:checked`);
+      if (marcada && marcada.value === respostas[pergunta]) {
+        acertos++;
+      }
+    }
+
+    const resultado = document.getElementById("resultado");
+    resultado.style.display = "block";
+
+    if (acertos >= 3) {
+      resultado.className = "resultado aprovado";
+      resultado.innerHTML = `✅ Aprovado!<br>Você acertou ${acertos} de 4 perguntas.<br>Bom trabalho!`;
+    } else {
+      resultado.className = "resultado reprovado";
+      resultado.innerHTML = `❌ Reprovado.<br>Você acertou ${acertos} de 4 perguntas.<br>Revise o conteúdo e tente novamente.`;
+    }
+
+    resultado.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
