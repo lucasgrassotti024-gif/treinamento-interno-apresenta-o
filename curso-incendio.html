@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso Incêndio Básico - Treinamentos de Segurança</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #0b6b3a;
+      --verde-claro: #16a34a;
+      --verde-escuro: #064e2a;
+      --branco: #ffffff;
+      --cinza-claro: #f4f6f9;
+      --cinza-texto: #444;
+      --vermelho: #d93025;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cinza-claro);
+      color: var(--cinza-texto);
+    }
+
+    header, footer {
+      background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+      color: var(--branco);
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .alerta {
+      background: #fdecea;
+      border-left: 6px solid var(--vermelho);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .quiz {
+      margin-top: 20px;
+    }
+
+    .pergunta {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .pergunta h4 {
+      margin-bottom: 10px;
+      color: var(--verde);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    button {
+      background: var(--verde);
+      color: var(--branco);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: var(--verde-claro);
+    }
+
+    .resultado {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .aprovado {
+      background: #e6f6ee;
+      color: var(--verde);
+      border-left: 6px solid var(--verde);
+    }
+
+    .reprovado {
+      background: #fdecea;
+      color: var(--vermelho);
+      border-left: 6px solid var(--vermelho);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Treinamentos de Segurança</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CONTEÚDO DO CURSO -->
+  <div class="box">
+    <h2>🧯 Incêndio Básico</h2>
+
+    <p>
+      Incêndio é a presença de fogo fora de controle. Dentro da fábrica, um
+      pequeno foco pode se transformar rapidamente em um incêndio grande,
+      colocando pessoas, equipamentos e a produção em risco.
+    </p>
+
+    <p>
+      Muitas vezes, o incêndio começa com algo simples, como uma faísca,
+      aquecimento, curto-circuito ou produto inflamável mal armazenado.
+    </p>
+
+    <div class="alerta">
+      ⚠️ Todo princípio de incêndio deve ser levado a sério.
+    </div>
+
+    <h3>Principais causas de incêndio</h3>
+    <ul>
+      <li>Curto-circuito</li>
+      <li>Trabalho a quente</li>
+      <li>Produtos inflamáveis</li>
+      <li>Equipamentos superaquecidos</li>
+      <li>Falta de organização</li>
+    </ul>
+
+    <h3>O que fazer ao perceber um incêndio</h3>
+    <ul>
+      <li>Manter a calma</li>
+      <li>Acionar o alarme ou comunicar a emergência</li>
+      <li>Afastar pessoas da área</li>
+      <li>Usar extintor apenas se for seguro</li>
+      <li>Seguir rotas de fuga</li>
+    </ul>
+
+    <h3>Uso básico do extintor</h3>
+    <ul>
+      <li>Puxar o pino de segurança</li>
+      <li>Apontar para a base do fogo</li>
+      <li>Apertar o gatilho</li>
+      <li>Fazer movimento de varredura</li>
+    </ul>
+
+    <h3>O que NÃO fazer</h3>
+    <ul>
+      <li>Entrar em área com muita fumaça</li>
+      <li>Tentar apagar fogo grande sozinho</li>
+      <li>Usar água em equipamentos elétricos</li>
+      <li>Bloquear saídas de emergência</li>
+    </ul>
+
+    <p>
+      Saber como agir em caso de incêndio pode salvar vidas. Mesmo que o foco
+      seja pequeno, nunca subestime o perigo do fogo.
+    </p>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="box">
+    <h2>📝 Avaliação Rápida</h2>
+
+    <div class="quiz">
+
+      <div class="pergunta">
+        <h4>1) O que é um incêndio?</h4>
+        <label><input type="radio" name="q1" value="a"> Fogo controlado</label>
+        <label><input type="radio" name="q1" value="b"> Fogo fora de controle</label>
+        <label><input type="radio" name="q1" value="c"> Calor</label>
+        <label><input type="radio" name="q1" value="d"> Fumaça</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>2) Ao perceber um incêndio, o correto é:</h4>
+        <label><input type="radio" name="q2" value="a"> Ignorar</label>
+        <label><input type="radio" name="q2" value="b"> Comunicar e afastar pessoas</label>
+        <label><input type="radio" name="q2" value="c"> Esconder</label>
+        <label><input type="radio" name="q2" value="d"> Continuar trabalhando</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>3) Ao usar o extintor, deve-se apontar para:</h4>
+        <label><input type="radio" name="q3" value="a"> O topo da chama</label>
+        <label><input type="radio" name="q3" value="b"> A base do fogo</label>
+        <label><input type="radio" name="q3" value="c"> O teto</label>
+        <label><input type="radio" name="q3" value="d"> O chão</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>4) O que NÃO deve ser feito?</h4>
+        <label><input type="radio" name="q4" value="a"> Usar água em equipamento elétrico</label>
+        <label><input type="radio" name="q4" value="b"> Seguir rotas de fuga</label>
+        <label><input type="radio" name="q4" value="c"> Comunicar emergência</label>
+        <label><input type="radio" name="q4" value="d"> Afastar pessoas</label>
+      </div>
+
+      <button onclick="corrigirQuiz()">Finalizar Avaliação</button>
+      <div id="resultado" class="resultado"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Treinamentos de Segurança
+</footer>
+
+<script>
+  function corrigirQuiz() {
+    let acertos = 0;
+
+    const respostas = {
+      q1: "b",
+      q2: "b",
+      q3: "b",
+      q4: "a"
+    };
+
+    for (let pergunta in respostas) {
+      const marcada = document.querySelector(`input[name="${pergunta}"]:checked`);
+      if (marcada && marcada.value === respostas[pergunta]) {
+        acertos++;
+      }
+    }
+
+    const resultado = document.getElementById("resultado");
+    resultado.style.display = "block";
+
+    if (acertos >= 3) {
+      resultado.className = "resultado aprovado";
+      resultado.innerHTML = `✅ Aprovado!<br>Você acertou ${acertos} de 4 perguntas.<br>Bom trabalho!`;
+    } else {
+      resultado.className = "resultado reprovado";
+      resultado.innerHTML = `❌ Reprovado.<br>Você acertou ${acertos} de 4 perguntas.<br>Revise o conteúdo e tente novamente.`;
+    }
+
+    resultado.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
