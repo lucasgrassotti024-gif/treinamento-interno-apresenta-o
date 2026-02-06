@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso EPI - Treinamentos de Segurança</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --verde: #0b6b3a;
+      --verde-claro: #16a34a;
+      --verde-escuro: #064e2a;
+      --branco: #ffffff;
+      --cinza-claro: #f4f6f9;
+      --cinza-texto: #444;
+      --vermelho: #d93025;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cinza-claro);
+      color: var(--cinza-texto);
+    }
+
+    header, footer {
+      background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+      color: var(--branco);
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .alerta {
+      background: #e6f6ee;
+      border-left: 6px solid var(--verde);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .quiz {
+      margin-top: 20px;
+    }
+
+    .pergunta {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .pergunta h4 {
+      margin-bottom: 10px;
+      color: var(--verde);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    button {
+      background: var(--verde);
+      color: var(--branco);
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: var(--verde-claro);
+    }
+
+    .resultado {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .aprovado {
+      background: #e6f6ee;
+      color: var(--verde);
+      border-left: 6px solid var(--verde);
+    }
+
+    .reprovado {
+      background: #fdecea;
+      color: var(--vermelho);
+      border-left: 6px solid var(--vermelho);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Treinamentos de Segurança</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CONTEÚDO DO CURSO -->
+  <h2>🦺 Uso Correto de EPIs</h2>
+
+  <p>
+    Os Equipamentos de Proteção Individual, conhecidos como EPIs, são utilizados
+    para proteger o trabalhador contra riscos que não podem ser totalmente
+    eliminados no ambiente de trabalho.
+  </p>
+
+  <p>
+    Mesmo quando a área é segura e a máquina possui proteções, ainda podem existir
+    riscos. O EPI funciona como a última barreira entre você e o acidente.
+  </p>
+
+  <div class="alerta">
+    ⚠️ O EPI não elimina o risco, mas reduz muito a chance de uma lesão grave.
+  </div>
+
+  <h3>Por que o uso de EPI é tão importante?</h3>
+  <ul>
+    <li>Reduz o risco de ferimentos</li>
+    <li>Protege contra impactos, cortes e quedas de objetos</li>
+    <li>Protege contra poeira, produtos químicos e ruído</li>
+    <li>Ajuda a prevenir acidentes mais graves</li>
+    <li>É uma exigência das normas de segurança</li>
+  </ul>
+
+  <h3>Principais EPIs usados na indústria</h3>
+  <ul>
+    <li>Capacete (proteção contra impactos na cabeça)</li>
+    <li>Óculos de segurança (proteção dos olhos)</li>
+    <li>Protetor auricular (proteção da audição)</li>
+    <li>Luvas (proteção das mãos)</li>
+    <li>Botina de segurança (proteção dos pés)</li>
+    <li>Máscaras ou respiradores (proteção respiratória)</li>
+    <li>Cinto de segurança (trabalho em altura)</li>
+  </ul>
+
+  <h3>O que pode acontecer se não usar o EPI?</h3>
+  <ul>
+    <li>Cortes e machucados nas mãos</li>
+    <li>Lesões nos olhos por partículas</li>
+    <li>Perda de audição com o tempo</li>
+    <li>Queimaduras químicas</li>
+    <li>Fraturas nos pés</li>
+    <li>Acidentes mais graves em quedas</li>
+  </ul>
+
+  <h3>Regras de Ouro dos EPIs</h3>
+  <ul>
+    <li>Usar o EPI correto para cada atividade</li>
+    <li>Colocar o EPI antes de iniciar o trabalho</li>
+    <li>Usar durante toda a atividade</li>
+    <li>Não retirar por desconforto</li>
+    <li>Verificar se o EPI está em bom estado</li>
+    <li>Solicitar troca quando estiver danificado</li>
+  </ul>
+
+  <p>
+    Usar EPI não é só cumprir regra. É cuidar da própria segurança e também da
+    segurança dos colegas. Um pequeno descuido pode causar um acidente que poderia
+    ser evitado com o uso correto do equipamento.
+  </p>
+
+  <!-- QUIZ -->
+  <div class="box">
+    <h2>📝 Avaliação Rápida</h2>
+
+    <div class="quiz">
+
+      <div class="pergunta">
+        <h4>1) Qual é a principal função do EPI?</h4>
+        <label><input type="radio" name="q1" value="a"> Substituir as proteções da máquina</label>
+        <label><input type="radio" name="q1" value="b"> Proteger o trabalhador contra riscos</label>
+        <label><input type="radio" name="q1" value="c"> Facilitar o trabalho</label>
+        <label><input type="radio" name="q1" value="d"> Evitar paradas de produção</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>2) Quando o EPI deve ser utilizado?</h4>
+        <label><input type="radio" name="q2" value="a"> Somente em atividades perigosas</label>
+        <label><input type="radio" name="q2" value="b"> Apenas quando o líder estiver olhando</label>
+        <label><input type="radio" name="q2" value="c"> Durante toda a atividade com risco</label>
+        <label><input type="radio" name="q2" value="d"> Apenas no início do turno</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>3) O que deve ser feito se o EPI estiver danificado?</h4>
+        <label><input type="radio" name="q3" value="a"> Continuar usando</label>
+        <label><input type="radio" name="q3" value="b"> Emprestar de um colega</label>
+        <label><input type="radio" name="q3" value="c"> Solicitar substituição</label>
+        <label><input type="radio" name="q3" value="d"> Improvisar</label>
+      </div>
+
+      <div class="pergunta">
+        <h4>4) Por que não se deve retirar o EPI por desconforto?</h4>
+        <label><input type="radio" name="q4" value="a"> Porque é regra da empresa</label>
+        <label><input type="radio" name="q4" value="b"> Porque reduz a produtividade</label>
+        <label><input type="radio" name="q4" value="c"> Porque elimina a proteção contra riscos</label>
+        <label><input type="radio" name="q4" value="d"> Porque o líder pode ver</label>
+      </div>
+
+      <button onclick="corrigirQuiz()">Finalizar Avaliação</button>
+      <div id="resultado" class="resultado"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Treinamentos de Segurança
+</footer>
+
+<script>
+  function corrigirQuiz() {
+    let acertos = 0;
+
+    const respostas = {
+      q1: "b",
+      q2: "c",
+      q3: "c",
+      q4: "c"
+    };
+
+    for (let pergunta in respostas) {
+      const marcada = document.querySelector(`input[name="${pergunta}"]:checked`);
+      if (marcada && marcada.value === respostas[pergunta]) {
+        acertos++;
+      }
+    }
+
+    const resultado = document.getElementById("resultado");
+    resultado.style.display = "block";
+
+    if (acertos >= 3) {
+      resultado.className = "resultado aprovado";
+      resultado.innerHTML = `✅ Aprovado!<br>Você acertou ${acertos} de 4 perguntas.<br>Bom trabalho!`;
+    } else {
+      resultado.className = "resultado reprovado";
+      resultado.innerHTML = `❌ Reprovado.<br>Você acertou ${acertos} de 4 perguntas.<br>Revise o conteúdo e tente novamente.`;
+    }
+
+    resultado.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
